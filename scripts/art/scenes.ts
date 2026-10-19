@@ -4,7 +4,7 @@
  * scripts/render-art.mts. All visuals are original procedural artwork.
  */
 import { colorways, type Colorway } from "../../src/lib/art/palette";
-import { assembledWatch, buckle, mix, printPattern, sharedDefs, strap, watchDefs, watchHead } from "../../src/lib/art/svg";
+import { assembledWatch, mix, printPattern, sharedDefs, strap, watchDefs, watchHead } from "../../src/lib/art/svg";
 import { grain, jaaliShadow, lighting, surface, type Surface } from "./surfaces";
 
 export interface Scene {

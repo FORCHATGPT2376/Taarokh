@@ -122,15 +122,6 @@ export function jaaliShadow(W: number, H: number, id: string, opacity = 0.5, cel
   }`;
 }
 
-/** Inverse: soft shafts of warm light through a jaali (for dark scenes). */
-export function jaaliLight(W: number, H: number, id: string, opacity = 0.35, cell = 160, transform = "skewX(-25) rotate(-6)"): string {
-  return jaaliShadow(W, H, id, 0, cell, transform).replace(
-    `<rect width="${W}" height="${H}" fill="#2A1608" opacity="0" mask="url(#${id}m)" style="mix-blend-mode:multiply"/>`,
-    `<g mask="url(#${id}m)"><rect width="${W}" height="${H}" fill="#000"/></g>
-     <mask id="${id}m2" maskUnits="userSpaceOnUse" x="0" y="0" width="${W}" height="${H}"><rect width="${W}" height="${H}" fill="#fff"/><g filter="url(#${id}b)"><rect x="${-W}" y="${-H}" width="${W * 3}" height="${H * 3}" fill="url(#${id}p)" transform="translate(${W / 2} ${H / 2}) ${transform} translate(${-W / 2} ${-H / 2})"/></g></mask>`,
-  );
-}
-
 /** Film grain over everything. */
 export function grain(W: number, H: number, id: string, amount = 0.07, seed = 11): string {
   return `
