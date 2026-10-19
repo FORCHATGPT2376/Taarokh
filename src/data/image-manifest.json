@@ -1,0 +1,267 @@
+{
+  "/images/collections/bagru.jpg": {
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAwCdASoQABQAPu1iqk4ppaQiMAgBMB2JQBOmUABL1RTmRl9Q0HoAAM25mvTjl3lavlojvTwoMgoogKqAJvjLQPucb4qT+uSaKfbaLxzY8bxm0NQdNrbAAAA="
+  },
+  "/images/collections/jharokha.jpg": {
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAACwAwCdASoQABQAPu1iqU2ppaOiMAgBMB2JZwAAUWH0FYycS7dV4AD+3ZwRoRjlhLTrBwX5wajJ9m179ZDbV4t4pDFNgujsKaDY2vTdfgk2gMN6GSDOWFS+mHAAAA=="
+  },
+  "/images/collections/sanganer.jpg": {
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQBACdASoQABQAPu1kqk4ppaQiMAgBMB2JZQCsABoQd0+a97AgkVvoAAD+l81XBX6LA1FUbmkCsZSUiqlJXxVzpnAiXrVVI18zCQIyrhc5ggAFXXrAILst3t6bCjgA"
+  },
+  "/images/editorial/construction.jpg": {
+    "width": 2000,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADwAQCdASoQAAwAA4BaJZQCdAEN0RC58gAA/vB1ogup0Uu9z9S1X+1K0+fMyeq3RQLv2hdFkuSf7s8AMAA="
+  },
+  "/images/editorial/intro-textile.jpg": {
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAADwAwCdASoQABQAPu1iqU2ppaOiMAgBMB2JZQC+SCB4u9cny2cLnKsAAOIucmzib7G0U8RHleqE0XZ1rrQxAqmUPlnyfFVYL03tukictcfN2+SUQ9sPO/wax/BFy+QQ5lKYM4x84KyBySoBltr7/1tPoPBDremr7yFjebMDx62g4YYA"
+  },
+  "/images/editorial/jaipur-facade-tall.jpg": {
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAACwAwCdASoQABQAPu1iqU2ppaQiMAgBMB2JYwCdACFaLw8+U9hRAAD176IvYOA/Eo4IW87zdLs1tLLaDMeU0Zw4s7tSTfRCYhDiAAl6CGpAiiH+iMgAAA=="
+  },
+  "/images/editorial/jaipur-facade.jpg": {
+    "width": 2400,
+    "height": 1300,
+    "blur": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADQAQCdASoQAAkAA4BaJQBOgB7HkH1UAAD2iU1947+mc+ntIyhpdJ+LuGGN/Xj64lZgRrAeCJo0zJaQ+yDLbT4AAAA="
+  },
+  "/images/editorial/material-fabric.jpg": {
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAAAQBACdASoQABQAPu1iqU2ppaOiMAgBMB2JZwC+SBo1xSu1mQc2lHZ9cADiYJ75qUekUwnm2gAL8fOG64MixHGJ/5BqitP0WnH4RiOmzQfJtlSNZNyhfo1YhPdMplKWV5vRQQmh8/Pl9dQMcVGksMKjwOeS+2mRjtNQbWgA"
+  },
+  "/images/editorial/og.jpg": {
+    "width": 1200,
+    "height": 630,
+    "blur": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAgAA4BaJQBOgBxMybQlZUAA/tDZqk/nI5ERto0YfYaCAtIWyEoYbxQUERKR7w4RpNFS9GEn+WD4vn7J3q+AAAA="
+  },
+  "/images/editorial/on-cloth.jpg": {
+    "width": 2000,
+    "height": 1333,
+    "blur": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAsAA4BaJZwAApIunQ7IeAAA/tKS07Lb/sDqHKNx8+ZbronxE9KCRzL6Asi3VXGhE8LFm3dptcq2r9Qcny8AAAA="
+  },
+  "/images/editorial/philosophy.jpg": {
+    "width": 2400,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAAAQAgCdASoQAAoAA4BaJZQCdAELY9ZCJZAAAP7ypeSyoYy0xQyi6YyOaM2IAA=="
+  },
+  "/images/editorial/strap-row.jpg": {
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAsAA4BaJZQCdADDhUqpBYAA/lhV3QvW+VxynTXcCNjo8CR2pP53NiCYa2R3iONJ1y5fyZumnuFa6TgrGtaXIafo3wAA"
+  },
+  "/images/editorial/swatch-board.jpg": {
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAsAA4BaJZQCdAEPATTGxoAA/rdP16o2eC3SCzZHnZ+VtTuVQ7t3JIYmJcF3ac6NB7YjNiw3PV/1VuY9PG5kGgAAAA=="
+  },
+  "/images/editorial/triptych.jpg": {
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAsAA4BaJQBOgBRjFoDYAAD+4Me12CrarrnZ1YVLljtui35b2iDVS0N2IuSDH+kcYuqsHsYYcRCVYB+rAfR7rfJMx7NqorwJ65H0AAA="
+  },
+  "/images/hero/hero-desktop.jpg": {
+    "width": 2400,
+    "height": 1400,
+    "blur": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADQAQCdASoQAAkAA4BaJYwCdADc70iLAAD+94Jb4V25HuNgU0Qi766A0Exqfs+paOB5AxhcGvBtTiHXlpJ6oAAA"
+  },
+  "/images/hero/hero-mobile.jpg": {
+    "width": 1200,
+    "height": 1900,
+    "blur": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAABQBACdASoQABkAPu1kqU2ppaQiMAgBMB2JZQC7AYwc3ultMxRLZe315ZZQAP7yocif/SIkfq8qeE9N8+XcNSjgJTnWW52kJmOokGw7hOorRrj3yxxeXBASDAFgE4zDmywuSeNrZb4yFejsCv4JWZX+zRQfBkjpL5nbu/BYRiKn0K1FanZhgPbAfuNQFCxAYAA="
+  },
+  "/images/journal/block-printing-story.jpg": {
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAAAQAgCdASoQAAsAA4BaJYgCdAEfk2sqstYAAPueXISuofacm2MDFKGkYIuiE7m4xYbrOtlgXAAAAA=="
+  },
+  "/images/journal/dress-watch.jpg": {
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAADwAQCdASoQAAsAA4BaJZwAAtzkt8XPUQwA/u0JnFvaLQ0vTuEn3kz1DdYAAA=="
+  },
+  "/images/journal/jaipur-architecture.jpg": {
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAACQAQCdASoQAAsAA4BaJQBOgBjFBsAA9hmyBq2vUi7ukf5kD4t+roFh1CZ2/+uvjns7KHw0HxNOygTfgAA="
+  },
+  "/images/journal/leather-vs-fabric.jpg": {
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAQAgCdASoQAAsAA4BaJZQCdADJe8BnpBcAAP7iLu9Zlt+VsUTZsg7qI00vt5hZgSvQmg8wyXBovRfvpwGyZuoVovjbtQVVSCAAAA=="
+  },
+  "/images/journal/lug-width.jpg": {
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoQAAsAA4BaJZQCdAENpt0324AA/tf2wJaf6tpvSKKtqG9FcxHdQWpn5sDWG1hkiJ+yi1/jT6mev+3YqJKiqQQA"
+  },
+  "/images/journal/mechanical-watches.jpg": {
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAQCdASoQAAsAA4BaJZwAAxZI1hTgAAD+ilo9p1lC6ODLx1VfJ8B62RO00HT8q+U5ChGe4SY753z5lJE2HHLFd8qu71JYmGWSQOSC1lcSOgQA"
+  },
+  "/images/journal/sanganeri-printing.jpg": {
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAwAgCdASoQAAsAA4BaJQBOgCPzJcrxSr3yAADOJrpOfpR00UCeob292JXiuFAmwwj7ykw0AAA="
+  },
+  "/images/products/_finish/04-buckle.jpg": {
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACwAQCdASoQABAAA4BaJYgCdADiMT4AAOJgkxEUaZIxu5GXEK68wBvRz27n348Hxg5EVJUzdR1zx5+Nigzt7F3iAS5m2kOWr5ZQDAgAAAA="
+  },
+  "/images/products/_material/03-detail.jpg": {
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADQAQCdASoQABAAA4BaJZwAAhviIjlqAAD+5oHlOg4OkvDRNPkQRH/vqRi5/EwAAAA="
+  },
+  "/images/products/bagru-earth/01-front.jpg": {
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADQAQCdASoQABAAA4BaJYwCdADwzDuSYAD+7iHzS5IV+ecnT7gkZWqfLn5ezci/bahhzQejLly21RGSWAA="
+  },
+  "/images/products/bagru-earth/02-on-watch.jpg": {
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoQABAAA4BaJYgCdADG7tnvR0AA4lXpsJdvdZ/8F2jE1llDMRL/Yj1hbGbrDX43iiqTI3YYddkPe5aKQ5aiSUAA"
+  },
+  "/images/products/bagru-earth/03-detail.jpg": {
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADwAQCdASoQABAAA4BaJYgCdADJ1Q5/pwAA4fBQ6qQijbWIsJ2cwyDDtXvGcGOgSLrpuq4wmknMop8rgAA="
+  },
+  "/images/products/bagru-earth/04-buckle.jpg": {
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACwAQCdASoQABAAA4BaJYgCdADiMT4AAOJgkxEUaZIxu5GXEK68wBvRz27n348Hxg5EVJUzdR1zx5+Nigzt7F3iAS5m2kOWr5ZQDAgAAAA="
+  },
+  "/images/products/bagru-midnight/01-front.jpg": {
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAQCdASoQABAAA4BaJZQAApLyS8jjIAD+7iCtc0dGYXh9dyaaF883IbDC1JyW58gb2h8zJp955pkt/xKe66D32f4PvewHAAA="
+  },
+  "/images/products/bagru-midnight/02-on-watch.jpg": {
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoQABAAA4BaJZwC7ADHYL5f4QAA/uovsaxPUebkdlT1RiUf0VOOG/0rexCp919YyxrJhPyrctslFBQAAAA="
+  },
+  "/images/products/bagru-midnight/03-detail.jpg": {
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADQAQCdASoQABAAA4BaJZwAAhviIjlqAAD+5oHlOg4OkvDRNPkQRH/vqRi5/EwAAAA="
+  },
+  "/images/products/bagru-midnight/04-buckle.jpg": {
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoQABAAA4BaJZwAAic++x12drQA/u0IzBAVyWy4LhPpgehN7Cu3xNwJGZNF+VEBI5oXy2cO5CfTYn3MtkSI5/gA"
+  },
+  "/images/products/jaipur-rose/01-front.jpg": {
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADwAQCdASoQABAAA4BaJYwCdAEUiUigQAAA/u4hutL9uKHaAnLfcUsGSUNIF0YY5ByfVKejLly2p7VtAAA="
+  },
+  "/images/products/jaipur-rose/02-on-watch.jpg": {
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAwAgCdASoQABAAA4BaJZQCdADJ2D5Xdlx7IAD+yOyuON28+RN5kL4NQQHdm4gigq3lpKw/Nv2Dmgo1E5WUJguv4dPqtBk0q3LCP9fAAAA="
+  },
+  "/images/products/jaipur-rose/03-detail.jpg": {
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAwAgCdASoQABAAA4BaJQBOgCL84axtDJHfgAD+thf6viB+Qm0m08NIxEadtvZgMnHylcjGI5WxT0JVbTDZt7Z4fsZ6DJBzTQUywg7wAAA="
+  },
+  "/images/products/jaipur-rose/04-buckle.jpg": {
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAABQAgCdASoQABAAA4BaJYwCdAEfpohGsRFl7WAA/snwbxM/mc/836iidM6e6JM5pnje+4VarhdQE/+sPPlVSUQNIrZwhRyAAAA="
+  },
+  "/images/products/jharokha-ivory/01-front.jpg": {
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoQABAAA4BaJZQCdAEN4hqFSAAA/u4hTqvGhA8xVxR7aXNxOqQCLKuB88PRjH8JQAA="
+  },
+  "/images/products/jharokha-ivory/02-on-watch.jpg": {
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAwAgCdASoQABAAA4BaJYwCdAEN/let1oj/IAD+yOwJoW5nNdCAxXjAv/EFDmZ7CMMAn/FKUdFiQNILPFcvIG41max/oORTg6tyAAAA"
+  },
+  "/images/products/jharokha-ivory/03-detail.jpg": {
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAAAwAgCdASoQABAAA4BaJZQCdADw2Xmzzr0OAAD+thd98PgqeYlbFxl6HX0PVs+d75GWg7Jxd6ESklQAAAA="
+  },
+  "/images/products/jharokha-ivory/04-buckle.jpg": {
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAwAgCdASoQABAAA4BaJZQCdAD7gn1mWWSaAAD+yfB85iIEqPkjNg+bb3xSVIAqXq/28sdLsVoUkVZDIplKJdm2Q6hELatiZk9dn0H5IgAAAA=="
+  },
+  "/images/products/jharokha-noir/01-front.jpg": {
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQABAAA4BaJZQCsADwxzMmAAD+7iCtc0dJOKhTd572T/uAZjN67ADRYLwCIRzdIyWYoXhUYyCn7M/jVs8afsP2Jk6gAA=="
+  },
+  "/images/products/jharokha-noir/02-on-watch.jpg": {
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACwAQCdASoQABAAA4BaJZwAAiDx/55gAP7tCBToGWW16MaK9DbXOI9W4n0mcMkpjdYGEkl0E9tfQ+AA"
+  },
+  "/images/products/jharokha-noir/03-detail.jpg": {
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACQAQCdASoQABAAA4BaJZwAAlwDHsAA/uaC2rT8cULddewlszCrLPDE/cyAAA=="
+  },
+  "/images/products/jharokha-noir/04-buckle.jpg": {
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQABAAA4BaJZwAAudpYvodV2AA/u0Ivy7usEOAkZxd+IkchEhQCIf63hlyuW2oP5mAecPnP029dLAKnofAAA=="
+  },
+  "/images/products/sanganer-indigo/01-front.jpg": {
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADQAQCdASoQABAAA4BaJZQAApLx1P50AAD+7iGSEbaVQJ2yCGibuQZjN66+Kz0RfD6PRxmNVf6/8i2YN+BOHNx2+9UhwAAA"
+  },
+  "/images/products/sanganer-indigo/02-on-watch.jpg": {
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQABAAA4BaJZQCsAYuvTAA7YXQAP7I+UUzUf7UMh8fRv1pKYdVPQv9I9SFupzQMgtB0FTKPOSRA3QtHBNMYTwUFPC7O3c+C7j4AAAA"
+  },
+  "/images/products/sanganer-indigo/03-detail.jpg": {
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACQAgCdASoQABAAA4BaJYwC7AdwLd9usYtA1jkbgAD+kbprqzfsGJyALoP267T9ik2kSE8W+hCrabssvFcPXTo1vyGxCV5Phr0sTzI1HsA0/+m4Mz3S33XyaAA="
+  },
+  "/images/products/sanganer-indigo/04-buckle.jpg": {
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQABAAA4BaJZQCdADDrZuUKwYgAP7J8Hp37eDKAYEhemQD9j2Kb5NKh/pFlV5Cbnu7zLchpQfTu3rahC+i85C1fs4PZuFr5QAAAA=="
+  },
+  "/images/products/sanganer-ivory/01-front.jpg": {
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoQABAAA4BaJZQCdAEN4hjl2AAA/u4hUaYp10x7geGwk8HpDpk5ts1ojlSYCCllUAA="
+  },
+  "/images/products/sanganer-ivory/02-on-watch.jpg": {
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAQAgCdASoQABAAA4BaJZgCdAEfS/ak5z3gAPkvkhp0EddT1pGT3nnvI47cMSSmf/qgBrhazs22y7rbo5t12oHHi7AFVPLnUIgAAA=="
+  },
+  "/images/products/sanganer-ivory/03-detail.jpg": {
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwAgCdASoQABAAA4BaJZACdAYtzdYQdhL8AADiXeeHWP1cZnjw2JXux9FhqhXZA1aIMqRZrOR1g+QQ7NQ3C2TRhC2yDg/4HHGVxMVxGGOEE4L9W+41kKhHgAA="
+  },
+  "/images/products/sanganer-ivory/04-buckle.jpg": {
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoQABAAA4BaJYgCdAENgHp6fwAA4mCUygtEge2hq67hLe8t9+QaNqa4IjJd88/Nl6u1DkUKzX4uGQwvbJbBAAAA"
+  }
+}
