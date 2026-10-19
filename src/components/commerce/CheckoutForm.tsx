@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { Trash2 } from "lucide-react";
 import { useId, useState } from "react";
 import { indianStates } from "@/data/india";
 import { site } from "@/data/site";
@@ -14,7 +15,7 @@ type Errors = Record<string, string>;
 
 export function CheckoutForm() {
   const id = useId();
-  const { lines, subtotal, ready, clear } = useCart();
+  const { lines, subtotal, ready, clear, remove } = useCart();
   const [errors, setErrors] = useState<Errors>({});
   const [state, setState] = useState<{ kind: "idle" | "sending" | "error"; message?: string }>({ kind: "idle" });
   const [placed, setPlaced] = useState<{ orderId: string; subtotal: number; phone: string } | null>(null);
@@ -146,6 +147,9 @@ export function CheckoutForm() {
                   <div className="min-w-0 flex-1">
                     <p className="serif text-xl leading-tight">{l.product.name}</p>
                     <p className="text-xs text-stone">{l.variant.lugWidthMm} mm lug · Qty {l.quantity}</p>
+                    <button type="button" onClick={() => remove(l.variantId)} className="mt-1 inline-flex min-h-10 items-center gap-1.5 text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-ink-soft hover:text-error">
+                      <Trash2 size={13} strokeWidth={1.4} aria-hidden /> Remove<span className="sr-only"> {l.product.name}</span>
+                    </button>
                   </div>
                   <p className="text-sm tabular-nums">{formatPrice(l.unitPrice * l.quantity)}</p>
                 </li>

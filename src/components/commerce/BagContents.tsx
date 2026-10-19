@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { Trash2 } from "lucide-react";
 import { formatPrice } from "@/lib/format";
 import { imageMeta } from "@/lib/images";
 import { useCart } from "./CartProvider";
@@ -57,8 +58,9 @@ export function BagContents({ onNavigate, variant = "drawer" }: { onNavigate?: (
                     <p className="shrink-0 text-sm tabular-nums">{formatPrice(l.unitPrice * l.quantity)}</p>
                   </div>
                   <div className="mt-auto flex items-center justify-between gap-3 pt-4">
-                    <QuantityControl size="sm" value={l.quantity} max={l.max} onChange={(n) => setQuantity(l.variantId, n)} label={l.product.name} />
-                    <button type="button" onClick={() => remove(l.variantId)} className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-stone link-underline hover:text-ink">
+                    <QuantityControl size="sm" allowZero value={l.quantity} max={l.max} onChange={(n) => setQuantity(l.variantId, n)} label={l.product.name} />
+                    <button type="button" onClick={() => remove(l.variantId)} className="inline-flex min-h-11 items-center gap-2 px-1 text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-ink-soft transition-colors hover:text-error">
+                      <Trash2 size={14} strokeWidth={1.4} aria-hidden />
                       Remove<span className="sr-only"> {l.product.name}</span>
                     </button>
                   </div>
