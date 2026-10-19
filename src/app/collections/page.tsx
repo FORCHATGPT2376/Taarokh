@@ -25,7 +25,7 @@ export default function CollectionsPage() {
             <section key={c.handle} className={cx("container-luxe grid items-center gap-10 py-14 md:grid-cols-12 md:gap-8 md:py-20")} aria-labelledby={`c-${c.handle}`}>
               <Reveal className={cx("md:col-span-7", flip && "md:order-2 md:col-start-6")}>
                 <Link href={`/collections/${c.handle}`} className="group block">
-                  <Img src={c.image} alt={c.imageAlt} aspect="5/4" sizes="(min-width: 768px) 58vw, 100vw" imgClassName="transition-transform duration-[1.8s] ease-[var(--ease-luxe)] group-hover:scale-[1.05]" note="Concept render" />
+                  <Img src={c.image} alt={c.imageAlt} aspect="5/4" sizes="(min-width: 768px) 58vw, 100vw" imgClassName="transition-transform duration-[1.8s] ease-[var(--ease-luxe)] group-hover:scale-[1.05]" />
                 </Link>
               </Reveal>
               <Reveal delay={0.15} className={cx("md:col-span-4", flip ? "md:order-1 md:col-start-1" : "md:col-start-9")}>

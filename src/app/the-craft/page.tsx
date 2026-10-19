@@ -21,8 +21,8 @@ const modules = [
   {
     k: "Textiles",
     title: "Cloth chosen for a small canvas.",
-    img: "/images/editorial/material-fabric.jpg",
-    alt: "Concept render: macro of a printed ivory textile with visible weave.",
+    img: "/images/photos/printing-hands.jpg",
+    alt: "Hands pressing a carved wooden block onto blue cotton during hand-block printing.",
     body: [
       "A strap is narrow, flexes thousands of times a day and sits against skin. We are evaluating tightly woven cottons and canvases that hold a fine print, keep their shape when reinforced, and feel comfortable in warm weather.",
       "The exact composition of each strap's fabric will be published on its product page once confirmed with the supplier.",
@@ -31,8 +31,8 @@ const modules = [
   {
     k: "Patterns",
     title: "Inspired by tradition, drawn from first principles.",
-    img: "/images/editorial/swatch-board.jpg",
-    alt: "Concept render: seven print swatches — florals, lattices and arcades — side by side.",
+    img: "/images/photos/carved-block-macro.jpg",
+    alt: "Close-up of a hand-carved wooden textile printing block.",
     body: [
       "Every TAAROKH print is an original drawing, made at the scale of a watch strap: the Sanganer buti, the Bagru jaal, the Jharokha arcade.",
       "We use the vocabulary of these traditions — scale, repetition, palette — without copying any existing block, protected artwork or building.",
@@ -61,7 +61,7 @@ const modules = [
     k: "Finishing",
     title: "Edges that stay clean.",
     img: "/images/products/sanganer-ivory/03-detail.jpg",
-    alt: "Concept render: close-up of stitched edges and holes on an ivory floral strap.",
+    alt: "Close-up of stitched edges and holes on an ivory floral strap.",
     body: [
       "Fabric edges are where cheap straps fail first. Ours are sealed and tested against fraying and delamination, and samples are inspected under consistent light for loose ends and uneven tension before any batch is approved.",
     ],
@@ -98,7 +98,7 @@ export default function CraftPage() {
       {modules.map((m, i) => (
         <section key={m.k} className="container-luxe grid items-center gap-12 border-b border-line py-20 md:grid-cols-12 md:py-28" aria-labelledby={`m-${i}`}>
           <Reveal className={cx("md:col-span-6", i % 2 === 1 && "md:order-2 md:col-start-7")}>
-            <Img src={m.img} alt={m.alt} aspect={m.k === "Patterns" || m.k === "Construction" ? "3/2" : "4/5"} sizes="(min-width: 768px) 50vw, 100vw" note={m.k === "Construction" ? "Illustration" : "Concept render"} />
+            <Img src={m.img} alt={m.alt} aspect={m.k === "Construction" ? "3/2" : "4/5"} sizes="(min-width: 768px) 50vw, 100vw" />
           </Reveal>
           <Reveal delay={0.15} className={cx("md:col-span-5", i % 2 === 1 ? "md:order-1 md:col-start-1" : "md:col-start-8")}>
             <p className="eyebrow text-gold-deep">{String(i + 1).padStart(2, "0")} · {m.k}</p>

@@ -17,7 +17,7 @@ export default function CarePage() {
       <PageHeader crumbs={[{ href: "/care", label: "Strap care" }]} eyebrow="Care" title={["Looking after", "your strap."]} intro="A little care keeps a textile strap looking considered for longer." />
       <section className="container-luxe grid gap-16 pb-32 lg:grid-cols-12">
         <div className="lg:col-span-5">
-          <Img src="/images/editorial/on-cloth.jpg" alt="Concept render: an unbranded watch on an ivory floral strap, resting on folded indigo cloth." aspect="4/5" sizes="(min-width:1024px) 40vw, 100vw" note="Concept render" imgClassName="object-[60%_50%]" />
+          <Img src="/images/editorial/on-cloth.jpg" alt="Concept render: an unbranded watch on an ivory floral strap, resting on folded indigo cloth." aspect="4/5" sizes="(min-width:1024px) 40vw, 100vw" imgClassName="object-[60%_50%]" />
         </div>
         <div className="space-y-12 lg:col-span-6 lg:col-start-7">
           {sections.map(([t, items], i) => (

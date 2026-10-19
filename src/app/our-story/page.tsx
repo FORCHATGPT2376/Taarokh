@@ -29,7 +29,7 @@ export default function StoryPage() {
       </section>
 
       <MaskReveal className="container-luxe mt-16">
-        <Img src="/images/editorial/jaipur-facade.jpg" alt="Original illustration: a pink-washed façade with cusped arches and white line ornament, lit by warm light." priority sizes="100vw" note="Original illustration" className="h-72 sm:h-auto sm:aspect-[21/9]" />
+        <Img src="/images/photos/hawa-mahal-facade.jpg" alt="The pink sandstone façade of the Hawa Mahal in Jaipur." priority sizes="100vw" className="h-72 sm:h-auto sm:aspect-[21/9]" />
       </MaskReveal>
 
       <section className="container-luxe grid gap-12 py-24 md:grid-cols-12 sm:py-32">
@@ -44,7 +44,7 @@ export default function StoryPage() {
       <section className="bg-paper py-24 sm:py-32">
         <div className="container-luxe grid items-center gap-14 md:grid-cols-12">
           <Reveal className="md:col-span-5">
-            <Img src="/images/editorial/triptych.jpg" alt="Concept render: one unbranded watch shown on three different printed straps." aspect="4/5" sizes="(min-width:768px) 40vw, 100vw" imgClassName="object-[50%_50%]" note="Concept render" />
+            <Img src="/images/editorial/triptych.jpg" alt="Concept render: one unbranded watch shown on three different printed straps." aspect="4/5" sizes="(min-width:768px) 40vw, 100vw" imgClassName="object-[50%_50%]" />
           </Reveal>
           <div className="md:col-span-6 md:col-start-7">
             <p className="eyebrow text-gold-deep">02 · Why the strap</p>

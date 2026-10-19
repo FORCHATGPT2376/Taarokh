@@ -70,7 +70,7 @@ async function Content({ params }: { params: PageProps<"/journal/[slug]">["param
         </div>
       </header>
       <div className="container-luxe mt-14">
-        <Img src={a.image} alt={a.imageAlt} aspect="16/9" priority sizes="100vw" note={a.image.includes("facade") || a.image.includes("architecture") ? "Original illustration" : "Concept render"} />
+        <Img src={a.image} alt={a.imageAlt} aspect="16/9" priority sizes="100vw" />
       </div>
       <div className="container-luxe">
         <div className="prose-luxe mx-auto max-w-[40rem] py-16 sm:py-24 [&>p:first-child]:first-letter:float-left [&>p:first-child]:first-letter:mr-3 [&>p:first-child]:first-letter:font-serif [&>p:first-child]:first-letter:text-[4.2rem] [&>p:first-child]:first-letter:leading-[0.85] [&>p:first-child]:first-letter:text-ink">

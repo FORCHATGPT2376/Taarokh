@@ -64,7 +64,7 @@ export function Footer() {
         <div className="mt-16 flex flex-col gap-3 border-t border-line-dark py-8 text-[0.68rem] tracking-[0.08em] text-ivory/50 sm:flex-row sm:items-center sm:justify-between">
           <p>© {site.copyrightYear} {site.contact.businessName ?? "TAAROKH"}. All rights reserved.</p>
           <p className="italic serif text-sm tracking-normal text-ivory/60">Designed with Jaipur in mind.</p>
-          <p>All imagery shown is original concept artwork.</p>
+          <Link href="/credits" className="link-underline">Image credits</Link>
         </div>
       </div>
     </footer>

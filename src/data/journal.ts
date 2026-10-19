@@ -77,8 +77,8 @@ If you are unsure, [ask us before ordering](/contact) and include your watch mod
     title: "The Art of Sanganeri Printing",
     dek: "Fine florals, careful registration and a town just south of Jaipur — an introduction to one of Rajasthan's best-known textile traditions.",
     category: "craft-heritage",
-    image: "/images/journal/sanganeri-printing.jpg",
-    imageAlt: "Concept render: a wooden printing block resting on cloth printed with small indigo flowers.",
+    image: "/images/photos/printing-blocks.jpg",
+    imageAlt: "Rows of hand-carved wooden textile printing blocks with floral and paisley designs.",
     publishedAt: "2026-10-19",
     featured: true,
     body: `
@@ -117,8 +117,8 @@ You can read more about how we separate inspiration from origin on [The Craft](/
     title: "The Architecture Behind Jaipur's Patterns",
     dek: "Arches, screens and a planned city: how Jaipur's built environment shapes a visual language.",
     category: "craft-heritage",
-    image: "/images/journal/jaipur-architecture.jpg",
-    imageAlt: "Original illustration: a pink-washed façade with cusped arches, white line ornament and lit jaali screens.",
+    image: "/images/photos/jali-screens.jpg",
+    imageAlt: "Sunlight passing through three pierced stone jali screens set in cusped arches.",
     publishedAt: "2026-10-19",
     body: `
 Jaipur was founded in 1727 by Maharaja Sawai Jai Singh II. Unusually for its time, it was a planned city: broad, straight streets laid out on a grid of rectangular sectors, with markets lining the main avenues. The planning is commonly credited to the architect Vidyadhar Bhattacharya and drew on traditional Indian principles of town planning. In 2019 the walled city was inscribed on the UNESCO World Heritage List.
@@ -232,8 +232,8 @@ Whatever you choose, look for straps whose materials are named precisely. Vague 
     title: "A Beginner's Guide to Mechanical Watches",
     dek: "Mainsprings, escapements and why a watch without a battery keeps running.",
     category: "watch-knowledge",
-    image: "/images/journal/mechanical-watches.jpg",
-    imageAlt: "Concept render: a close view of an unbranded watch dial with applied indices and dauphine hands.",
+    image: "/images/photos/gear-train.jpg",
+    imageAlt: "Brass gear wheels in the movement of a mechanical tower clock.",
     publishedAt: "2026-10-19",
     body: `
 A mechanical watch keeps time with springs and gears rather than a battery and an electronic circuit. For many people, that is precisely its appeal.
@@ -343,8 +343,8 @@ That is the idea TAAROKH is built around.
     title: "The Story of Traditional Block Printing",
     dek: "Wood, dye and repetition — the processes behind Rajasthan's block-printed textiles, and why provenance matters.",
     category: "craft-heritage",
-    image: "/images/journal/block-printing-story.jpg",
-    imageAlt: "Concept render: a wooden printing block on cloth printed with an ochre lattice.",
+    image: "/images/photos/carved-block-macro.jpg",
+    imageAlt: "Close-up of a hand-carved wooden textile printing block.",
     publishedAt: "2026-10-19",
     body: `
 Block printing — pressing a carved, dye-charged block onto cloth — is among the oldest ways of decorating textiles. In Rajasthan it remains a living craft, practised in centres such as Sanganer and Bagru near Jaipur, and closely associated with communities of printers known as Chhipa.

@@ -51,7 +51,7 @@ export default function Home() {
           </div>
           <div className="relative lg:col-span-5 lg:col-start-8">
             <MaskReveal>
-              <Img src="/images/editorial/intro-textile.jpg" alt="Concept render: macro view of the Sanganer Indigo print, with ivory flowers, edge stitching and a woven texture." aspect="4/5" sizes="(min-width: 1024px) 40vw, 90vw" note="Concept render" />
+              <Img src="/images/photos/carved-block-paisley.jpg" alt="A hand-carved wooden textile printing block with a paisley and floral design." aspect="4/5" sizes="(min-width: 1024px) 40vw, 90vw" />
             </MaskReveal>
             <p className="serif absolute -bottom-12 -right-4 hidden text-[7rem] leading-none text-sand/70 italic lg:block" aria-hidden>
               taar
@@ -136,7 +136,7 @@ export default function Home() {
       <section className="dark-surface relative overflow-hidden bg-ink text-ivory" aria-labelledby="story-title">
         <div className="relative h-[70svh] min-h-[28rem] md:h-[88svh]">
           <div className="absolute inset-0">
-            <Img src="/images/editorial/jaipur-facade.jpg" alt="Original illustration: a pink-washed Jaipur-style façade with cusped arches, white line ornament and warm light behind jaali screens." className="h-full !bg-ink" sizes="100vw" />
+            <Img src="/images/photos/hawa-mahal-facade.jpg" alt="The pink sandstone façade of the Hawa Mahal in Jaipur, with tiers of small windows and jharokhas." className="h-full !bg-ink" sizes="100vw" />
           </div>
           <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/10" />
           <div className="container-luxe absolute inset-x-0 bottom-0 pb-16 sm:pb-24">
@@ -175,12 +175,12 @@ export default function Home() {
         </div>
         <div className="mt-20 grid gap-12 md:grid-cols-3 md:gap-8">
           {[
-            { k: "The fabric", img: "/images/editorial/material-fabric.jpg", alt: "Concept render: macro of an ivory floral print with visible weave.", t: "A tightly woven printed cotton or canvas, chosen for how it holds a fine motif and how it feels against the skin. Exact composition is confirmed per product before release." },
+            { k: "The fabric", img: "/images/photos/block-printed-cotton-detail.jpg", alt: "Detail of an old hand-block-printed cotton textile with small floral butis (museum collection).", t: "Our prints take their cue from cloth like this: small florals, printed by hand. Ours is a tightly woven printed cotton or canvas, chosen for how it holds a fine motif; exact composition is confirmed per product." },
             { k: "The stitch", img: "/images/products/_material/03-detail.jpg", alt: "Concept render: close-up of edge stitching and strap holes on a midnight lattice print.", t: "Stitched edges with reinforcement where the strap takes the most strain — at the spring bars and the buckle. Each sample is checked for stitch tension and loose ends." },
             { k: "The finish", img: "/images/products/_finish/04-buckle.jpg", alt: "Concept render: a brushed steel tang buckle and keepers on an ochre strap.", t: "Sealed edges tested against fraying, and a corrosion-resistant tang buckle sized to the strap's taper. Hardware finishes are confirmed after sampling." },
           ].map((m, i) => (
             <Reveal key={m.k} delay={i * 0.12} className={i === 1 ? "md:mt-20" : ""}>
-              <Img src={m.img} alt={m.alt} aspect="4/5" sizes="(min-width: 768px) 30vw, 90vw" note="Concept render" />
+              <Img src={m.img} alt={m.alt} aspect="4/5" sizes="(min-width: 768px) 30vw, 90vw" />
               <h3 className="eyebrow mt-7">{m.k}</h3>
               <p className="mt-3 text-sm leading-relaxed text-stone">{m.t}</p>
             </Reveal>
@@ -203,7 +203,7 @@ export default function Home() {
       {/* 8 — Philosophy */}
       <section className="dark-surface relative overflow-hidden bg-ink text-ivory" aria-labelledby="philosophy-title">
         <div className="absolute inset-0">
-          <Img src="/images/editorial/philosophy.jpg" alt="" className="h-full !bg-ink" sizes="100vw" />
+          <Img src="/images/photos/hawa-mahal-night.jpg" alt="" className="h-full !bg-ink" sizes="100vw" />
           <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/75 to-ink/10" />
         </div>
         <div className="container-luxe relative py-36 sm:py-52">

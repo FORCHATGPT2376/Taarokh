@@ -151,6 +151,17 @@ export function sharedDefs(p: string, opts: { lite?: boolean } = {}): string {
     <feTurbulence type="fractalNoise" baseFrequency="0.55 0.08" numOctaves="3" seed="7" result="n"/>
     <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.6 1.05"/>
   </filter>
+  <filter id="${p}bleed" x="-2%" y="-2%" width="104%" height="104%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="2" seed="5" result="t"/>
+    <feDisplacementMap in="SourceGraphic" in2="t" scale="2.6" xChannelSelector="R" yChannelSelector="G" result="d"/>
+    <feGaussianBlur in="d" stdDeviation="0.55"/>
+  </filter>
+  <filter id="${p}weave" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="1.6 0.35" numOctaves="2" seed="13" result="h"/>
+    <feTurbulence type="fractalNoise" baseFrequency="0.35 1.6" numOctaves="2" seed="17" result="v"/>
+    <feComposite in="h" in2="v" operator="arithmetic" k2="0.5" k3="0.5"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -2.4 0 0 0 1.3"/>
+  </filter>
   <filter id="${p}inkMask" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
     <feTurbulence type="fractalNoise" baseFrequency="0.06" numOctaves="4" seed="3" result="n"/>
     <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 -0.9 1.25"/>
@@ -274,14 +285,14 @@ export function strap(o: StrapOpts): string {
       : "";
   const texture = o.lite
     ? `<rect x="-110" y="0" width="220" height="${L}" fill="url(#${p}twill)" opacity="0.22"/>`
-    : `<rect x="-110" y="0" width="220" height="${L}" fill="url(#${p}twill)" opacity="0.2" style="mix-blend-mode:multiply"/>
-       <rect x="-110" y="0" width="220" height="${L}" filter="url(#${p}fibre)" opacity="0.26" style="mix-blend-mode:multiply"/>`;
+    : `<rect x="-110" y="0" width="220" height="${L}" filter="url(#${p}weave)" opacity="0.32" style="mix-blend-mode:multiply"/>
+       <rect x="-110" y="0" width="220" height="${L}" filter="url(#${p}fibre)" opacity="0.22" style="mix-blend-mode:multiply"/>`;
   const printLayer = o.reverse
     ? `<rect x="-110" y="-2" width="220" height="${L + 4}" fill="${fill}"/>`
     : o.lite
       ? `<rect x="-110" y="-2" width="220" height="${L + 4}" fill="${fill}"/>`
       : `<rect x="-110" y="-2" width="220" height="${L + 4}" fill="${c.ground}"/>
-         <rect x="-110" y="-2" width="220" height="${L + 4}" fill="${fill}" mask="url(#${p}inkM${kind})"/>`;
+         <g filter="url(#${p}bleed)"><rect x="-110" y="-2" width="220" height="${L + 4}" fill="${fill}" mask="url(#${p}inkM${kind})"/></g>`;
   const sh = o.flip ? -1 : 1;
   const bkl = kind === "short" && o.buckle !== false ? buckle(p, L) : "";
   return `<g>
@@ -302,7 +313,8 @@ export function strap(o: StrapOpts): string {
       <path d="${d}" fill="none" stroke="#fff" stroke-opacity="0.12" stroke-width="2.4" transform="translate(-1.2 -1)"/>
     </g>
     <path d="${stitchPath(kind, L)}" fill="none" stroke="#000" stroke-opacity="0.35" stroke-width="3" stroke-dasharray="11 6.5" stroke-linecap="round" transform="translate(0.9 1.2)"/>
-    <path d="${stitchPath(kind, L)}" fill="none" stroke="${c.thread}" stroke-width="2.5" stroke-dasharray="11 6.5" stroke-linecap="round"/>
+    <path d="${stitchPath(kind, L)}" fill="none" stroke="${c.thread}" stroke-width="2.6" stroke-dasharray="11 6.5" stroke-linecap="round"${o.lite ? "" : ` filter="url(#${p}bleed)"`}/>
+    <path d="${stitchPath(kind, L)}" fill="none" stroke="#fff" stroke-opacity="0.35" stroke-width="0.8" stroke-dasharray="9 8.5" stroke-dashoffset="-1" stroke-linecap="round" transform="translate(-0.5 -0.6)"/>
     <path d="M-87 20 L87 20" stroke="${c.thread}" stroke-width="2.3" stroke-dasharray="11 6.5" stroke-linecap="round" opacity="0.9"/>
     ${holes}
     ${keepers}

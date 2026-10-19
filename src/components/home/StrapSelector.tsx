@@ -67,7 +67,6 @@ export function StrapSelector({ products }: { products: Product[] }) {
             dangerouslySetInnerHTML={{ __html: `<g transform="rotate(-8)">${svg}</g>` }}
           />
         </AnimatePresence>
-        <p className="absolute bottom-3 left-3 text-[0.55rem] font-semibold uppercase tracking-[0.2em] text-ink/50">Illustration · not to scale</p>
       </div>
 
       <div>

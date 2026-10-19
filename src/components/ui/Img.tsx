@@ -8,7 +8,7 @@ import { Monogram } from "@/components/brand/Monogram";
 
 /**
  * Image with consistent treatment: fixed aspect box (no layout shift), blur
- * placeholder, optional "Concept render" note, and a branded failure state.
+ * placeholder, optional caption note, and a branded failure state.
  */
 export function Img({
   src,

@@ -51,7 +51,7 @@ async function Content({ params }: { params: PageProps<"/collections/[handle]">[
             </div>
           </div>
           <div className="md:col-span-6 md:col-start-7">
-            <Img src={c.image} alt={c.imageAlt} aspect="4/5" priority sizes="(min-width: 768px) 50vw, 100vw" note="Concept render" />
+            <Img src={c.image} alt={c.imageAlt} aspect="4/5" priority sizes="(min-width: 768px) 50vw, 100vw" />
           </div>
         </div>
       </section>

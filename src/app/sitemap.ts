@@ -6,7 +6,7 @@ import { articles, journalCategories } from "@/data/journal";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const u = (p: string) => `${site.url}${p}`;
-  const pages = ["", "/shop", "/collections", "/our-story", "/the-craft", "/journal", "/size-guide", "/contact", "/faq", "/care", "/shipping", "/returns", "/privacy", "/terms"];
+  const pages = ["", "/shop", "/collections", "/our-story", "/the-craft", "/journal", "/size-guide", "/contact", "/faq", "/care", "/shipping", "/returns", "/privacy", "/terms", "/credits"];
   return [
     ...pages.map((p) => ({ url: u(p || "/"), changeFrequency: "weekly" as const, priority: p === "" ? 1 : 0.7 })),
     ...collections.map((c) => ({ url: u(`/collections/${c.handle}`), priority: 0.8 })),

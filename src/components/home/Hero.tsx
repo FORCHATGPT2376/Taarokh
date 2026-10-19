@@ -61,7 +61,6 @@ export function Hero() {
           <motion.span className="absolute inset-x-0 top-0 h-1/2 bg-ivory" animate={{ y: ["-100%", "200%"] }} transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }} />
         </span>
       </motion.div>
-      <p className="absolute bottom-4 right-[var(--gutter)] text-[0.55rem] font-semibold uppercase tracking-[0.2em] text-ivory/50">Concept render</p>
     </section>
   );
 }
