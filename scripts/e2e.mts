@@ -28,22 +28,22 @@ const page = await ctx.newPage();
 
 await t("PDP: add without width shows required-width message", async () => {
   await page.goto(`${base}/products/sanganer-indigo`, { waitUntil: "networkidle" });
-  await page.getByRole("button", { name: "Add to preview bag" }).click();
+  await page.getByRole("button", { name: "Add to bag", exact: true }).click();
   await page.getByText("Choose your lug width before adding to bag.").waitFor({ timeout: 3000 });
 });
 
-await t("PDP: planned width (18 mm) cannot be selected", async () => {
-  const r18 = page.getByRole("radio", { name: /^18 mm/ });
-  expect((await r18.getAttribute("aria-disabled")) === "true", "18mm not aria-disabled");
-  await r18.click({ force: true });
-  expect((await r18.getAttribute("aria-checked")) === "false", "18mm got selected");
-  await page.getByText(/is a planned width/i).waitFor({ timeout: 3000 });
+await t("PDP: 18 mm and 22 mm are selectable", async () => {
+  for (const w of ["18", "22"]) {
+    const r = page.getByRole("radio", { name: new RegExp(`^${w} mm`) });
+    await r.click();
+    expect((await r.getAttribute("aria-checked")) === "true", `${w}mm not selected`);
+  }
 });
 
 await t("PDP: select 20 mm, add 2 → drawer opens with 2 items", async () => {
   await page.getByRole("radio", { name: /^20 mm/ }).click();
   await page.getByRole("button", { name: "Increase quantity" }).click();
-  await page.getByRole("button", { name: "Add to preview bag" }).click();
+  await page.getByRole("button", { name: "Add to bag", exact: true }).click();
   await page.getByRole("dialog", { name: /bag/i }).waitFor({ timeout: 3000 });
   expect((await bagCount(page)) === 2, `bag count ${await bagCount(page)}`);
 });
@@ -59,10 +59,9 @@ await t("Bag: quantity capped at 5 per order", async () => {
   expect(await dlg.getByRole("button", { name: "Increase quantity" }).isDisabled(), "increase not disabled at max");
 });
 
-await t("Bag: preview mode shows no checkout, honest notice", async () => {
+await t("Bag: offers Cash on Delivery checkout", async () => {
   const dlg = page.getByRole("dialog", { name: /bag/i });
-  await dlg.getByText("Orders are not open yet", { exact: false }).waitFor({ timeout: 2000 });
-  expect((await dlg.getByRole("button", { name: /secure checkout/i }).count()) === 0, "checkout button present in preview");
+  await dlg.getByRole("link", { name: /Checkout · Cash on Delivery/ }).waitFor({ timeout: 2000 });
 });
 
 await t("Bag: Escape closes the drawer", async () => {
@@ -78,7 +77,7 @@ await t("Bag persists across reload and navigation", async () => {
 });
 
 await t("Bag: tampered localStorage is sanitised", async () => {
-  await page.evaluate(() => localStorage.setItem("taarokh.bag.v1", JSON.stringify([{ variantId: "TAR-SAN-IND-20", quantity: 999 }, { variantId: "TAR-SAN-IND-18", quantity: 1 }, { variantId: "nope", quantity: 1 }])));
+  await page.evaluate(() => localStorage.setItem("taarokh.bag.v1", JSON.stringify([{ variantId: "TAR-SAN-IND-20", quantity: 999 }, { variantId: "TAR-SAN-IND-26", quantity: 1 }, { variantId: "nope", quantity: 1 }])));
   await page.reload({ waitUntil: "networkidle" });
   await page.waitForTimeout(300);
   expect((await bagCount(page)) === 5, `count ${await bagCount(page)}`);
@@ -89,6 +88,31 @@ await t("Bag: remove item → empty state", async () => {
   await page.getByRole("button", { name: /Remove/ }).first().click();
   await page.getByText("Your collection starts here.").waitFor({ timeout: 3000 });
   await page.keyboard.press("Escape");
+});
+
+await t("Checkout: validation, then honest refusal when no order channel is configured", async () => {
+  await page.evaluate(() => localStorage.setItem("taarokh.bag.v1", JSON.stringify([{ variantId: "TAR-BAG-EAR-22", quantity: 2 }])));
+  await page.goto(`${base}/checkout`, { waitUntil: "networkidle" });
+  await page.getByText("Bagru Earth").first().waitFor({ timeout: 3000 });
+  await page.getByRole("button", { name: /Place order/ }).click();
+  await page.getByText("Please enter your full name.").waitFor({ timeout: 2000 });
+  await page.getByText("Enter a 10-digit Indian mobile number.").waitFor({ timeout: 2000 });
+  await page.getByText("Enter a valid 6-digit PIN code.").waitFor({ timeout: 2000 });
+  await page.getByLabel("Full name").fill("Asha Test");
+  await page.getByLabel("Mobile number").fill("98765 43210");
+  await page.getByLabel(/House \/ flat/).fill("12 Hawa Road, C-Scheme");
+  await page.getByLabel("PIN code").fill("302001");
+  await page.getByLabel("City / town").fill("Jaipur");
+  await page.getByLabel("State").selectOption("Rajasthan");
+  await page.locator("main form").getByRole("checkbox").check();
+  await page.getByRole("button", { name: /Place order/ }).click();
+  await page.getByText(/was not placed/).waitFor({ timeout: 4000 });
+  expect((await page.getByText("Order received").count()) === 0, "false order success shown");
+});
+
+await t("Orders API rejects a tampered price-less/invalid order", async () => {
+  const res = await page.request.post(`${base}/api/orders`, { data: { lines: [{ variantId: "nope", quantity: 1 }], customer: { name: "A B", phone: "9876543210" }, address: { line1: "12 Some Road", city: "Jaipur", state: "Rajasthan", pincode: "302001" }, payment: "cod", agree: true } });
+  expect(res.status() === 409 || res.status() === 503, `status ${res.status()}`);
 });
 
 await t("Checkout API refuses in preview mode (no fake success)", async () => {

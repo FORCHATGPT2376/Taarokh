@@ -30,7 +30,7 @@ export default function SizeGuidePage() {
           <h2 className="serif mt-4 text-title">What lug width means</h2>
           <div className="prose-luxe mt-6">
             <p>Lug width is the <strong>inside distance between the lugs</strong> — the projections at the top and bottom of the case that hold the spring bar. It is measured in millimetres and must match the strap&rsquo;s width at the watch end.</p>
-            <p>Common widths are 18, 20 and 22 mm; smaller watches often use 12–16 mm, and odd sizes such as 19 or 21 mm exist on some dress and vintage watches. Our first collection is designed around <strong>20 mm</strong>.</p>
+            <p>Common widths are 18, 20 and 22 mm; smaller watches often use 12–16 mm, and odd sizes such as 19 or 21 mm exist on some dress and vintage watches. Our straps come in <strong>18, 20 and 22 mm</strong>.</p>
           </div>
         </Reveal>
         <Reveal delay={0.15} className="bg-paper p-6 sm:p-10">
@@ -69,7 +69,7 @@ export default function SizeGuidePage() {
           <p className="eyebrow text-gold-deep">03 · Width vs length</p>
           <h2 className="serif mt-4 text-title">Strap width, buckle width and length</h2>
           <div className="prose-luxe mt-6">
-            <p><strong>Strap width</strong> is measured at the lug end and must match your lug width. Most straps <strong>taper</strong> towards the buckle — so the <strong>buckle width</strong> is usually narrower. Our 20 mm straps are designed to taper to 18 mm.</p>
+            <p><strong>Strap width</strong> is measured at the lug end and must match your lug width. Most straps <strong>taper</strong> towards the buckle — so the <strong>buckle width</strong> is usually narrower. Ours taper by 2 mm — a 20 mm strap narrows to an 18 mm buckle.</p>
             <p><strong>Length</strong> is given as two numbers: the long piece (with holes) and the buckle piece. Our reference length is about 115 / 75 mm, to be confirmed on finished samples.</p>
             <p><strong>Wrist circumference</strong>: wrap a soft tape (or a strip of paper you then measure) around the wrist where you wear your watch. Snug, not tight.</p>
           </div>

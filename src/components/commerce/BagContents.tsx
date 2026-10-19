@@ -2,39 +2,16 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
-import { site } from "@/data/site";
 import { formatPrice } from "@/lib/format";
 import { imageMeta } from "@/lib/images";
 import { useCart } from "./CartProvider";
 import { QuantityControl } from "./QuantityControl";
-import { Button, ButtonLink } from "@/components/ui/Button";
+import { ButtonLink } from "@/components/ui/Button";
 import { EmptyBag } from "./EmptyBag";
 
 /** Shared by the drawer and the /cart page. */
 export function BagContents({ onNavigate, variant = "drawer" }: { onNavigate?: () => void; variant?: "drawer" | "page" }) {
   const { lines, subtotal, setQuantity, remove, notice, ready } = useCart();
-  const [status, setStatus] = useState<{ kind: "idle" | "loading" | "error"; message?: string }>({ kind: "idle" });
-  const preview = site.storeMode === "preview" || lines.some((l) => l.availabilityKind !== "purchasable");
-
-  async function checkout() {
-    setStatus({ kind: "loading" });
-    try {
-      const res = await fetch("/api/checkout", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ lines: lines.map((l) => ({ variantId: l.variantId, quantity: l.quantity })) }),
-      });
-      const data = await res.json().catch(() => null);
-      if (res.ok && data?.url) {
-        window.location.assign(data.url);
-        return;
-      }
-      setStatus({ kind: "error", message: data?.message ?? "Checkout is not available right now. Nothing has been charged." });
-    } catch {
-      setStatus({ kind: "error", message: "We couldn't reach the checkout. Please check your connection and try again. Nothing has been charged." });
-    }
-  }
 
   if (!ready) {
     return (
@@ -99,28 +76,12 @@ export function BagContents({ onNavigate, variant = "drawer" }: { onNavigate?: (
           <dd className="serif text-2xl tabular-nums">{formatPrice(subtotal)}</dd>
         </dl>
         <p className="mt-2 text-xs leading-relaxed text-stone">
-          Shipping and any applicable taxes are calculated at checkout. Please confirm your selected strap width before checking out.
+          Delivery charges, if any, are confirmed when we call. Please confirm your selected strap width before checking out.
         </p>
-        {preview ? (
-          <div className="mt-5 border border-line-strong p-4">
-            <p className="eyebrow text-gold-deep">Preview mode</p>
-            <p className="mt-2 text-sm leading-relaxed text-ink-soft">
-              Orders are not open yet. Your bag is saved on this device so you can return to it — no order will be placed and nothing will be charged.
-            </p>
-            <ButtonLink href="/#newsletter" onClick={onNavigate} variant="solid" className="mt-4 w-full">
-              Get the launch update
-            </ButtonLink>
-          </div>
-        ) : (
-          <Button onClick={checkout} disabled={status.kind === "loading"} className="mt-5 w-full" arrow>
-            {status.kind === "loading" ? "Preparing secure checkout…" : "Secure checkout"}
-          </Button>
-        )}
-        {status.kind === "error" && (
-          <p role="alert" className="mt-3 text-sm text-error">
-            {status.message}
-          </p>
-        )}
+        <ButtonLink href="/checkout" onClick={onNavigate} className="mt-5 w-full" arrow>
+          Checkout · Cash on Delivery
+        </ButtonLink>
+        <p className="mt-3 text-center text-xs text-stone">Pay in cash when it arrives. We call to confirm every order.</p>
         <div className="mt-4 flex justify-center">
           {variant === "drawer" ? (
             <button type="button" onClick={onNavigate} className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-stone link-underline hover:text-ink">

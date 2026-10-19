@@ -10,7 +10,7 @@ const routes = [
   "/", "/shop", "/collections", "/collections/sanganer", "/collections/jharokha",
   "/products/sanganer-indigo", "/products/jharokha-noir", "/our-story", "/the-craft",
   "/journal", "/journal/the-art-of-sanganeri-printing", "/journal/category/style",
-  "/size-guide", "/contact", "/cart", "/search?q=indigo", "/faq", "/care",
+  "/size-guide", "/contact", "/cart", "/checkout", "/search?q=indigo", "/faq", "/care",
   "/shipping", "/returns", "/privacy", "/terms", "/does-not-exist",
 ];
 const widths = (process.env.WIDTHS ?? "320,375,390,430,768,1024,1440,1920").split(",").map(Number);

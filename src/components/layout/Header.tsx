@@ -47,10 +47,10 @@ export function Header() {
         {preview && (
           <div className={cx("flex h-8 items-center justify-center px-4 text-center transition-colors duration-700", transparent ? "bg-ink/30 text-ivory/85" : "bg-indigo text-ivory/90")}>
             <p className="truncate text-[0.6rem] font-semibold uppercase tracking-[0.24em]">
-              Catalogue preview<span className="hidden sm:inline"> · orders are not yet open</span> ·{" "}
-              <Link href="/#newsletter" className="link-underline-static">
-                Get the launch update
-              </Link>
+              Pre-orders open<span className="hidden sm:inline"> · Cash on Delivery across India</span> ·{" "}
+              <a href={`tel:${site.contact.supportPhone?.replace(/\s/g, "")}`} className="link-underline-static">
+                {site.contact.supportPhone}
+              </a>
             </p>
           </div>
         )}

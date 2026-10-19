@@ -97,15 +97,15 @@ export function ProductPurchase({ product, siblings }: { product: Product; sibli
           <QuantityControl value={qty} max={avail?.max || site.maxPerOrder} onChange={(n) => setQty(Math.max(1, n))} label={product.name} />
         </div>
         <button type="button" onClick={submit} disabled={!anyAvailable} className="min-h-12 flex-1 bg-ink px-6 text-[0.7rem] font-semibold uppercase tracking-[0.24em] text-ivory transition-colors hover:bg-indigo disabled:opacity-40">
-          {anyAvailable ? (site.storeMode === "preview" ? "Add to preview bag" : "Add to bag") : "Currently unavailable"}
+          {anyAvailable ? "Add to bag" : "Currently unavailable"}
         </button>
       </div>
       <p aria-live="polite" className={cx("mt-3 min-h-5 text-sm", msg?.kind === "error" ? "text-error" : "text-stone")}>{msg?.text}</p>
 
       <div className="mt-4 space-y-2 border-t border-line pt-5 text-xs leading-relaxed text-stone">
         <p>
-          <span className="font-semibold text-ink">{avail?.label ?? (anyAvailable ? (site.storeMode === "preview" ? "Concept preview" : "Available to order") : "Coming soon")}.</span>{" "}
-          {site.storeMode === "preview" ? "Orders are not open yet. Sample straps are being developed and tested; nothing can be purchased during the preview." : null}
+          <span className="font-semibold text-ink">{avail?.label ?? (anyAvailable ? (site.storeMode === "preview" ? "Pre-order" : "Available to order") : "Coming soon")}.</span>{" "}
+          {site.storeMode === "preview" ? "Pay in cash when your strap is delivered. We call to confirm every order before dispatch; delivery time is confirmed on that call." : null}
         </p>
         <p>Measure your watch&rsquo;s lug width before ordering. Compatibility depends on the case and attachment system; <Link href="/contact" className="underline underline-offset-2">contact us</Link> if unsure.</p>
       </div>

@@ -27,11 +27,19 @@ export const site = {
    */
   storeMode: (env(process.env.NEXT_PUBLIC_STORE_MODE) === "live" ? "live" : "preview") as StoreMode,
 
+  /**
+   * Payment method offered at checkout. Only Cash on Delivery is enabled:
+   * orders are sent to the store (see /api/orders) and confirmed by phone
+   * before dispatch; nothing is charged online.
+   */
+  payment: "cod" as const,
+
   /** Max units of one variant per order (prevents accidental bulk orders). */
   maxPerOrder: 5,
 
   contact: {
     supportEmail: env(process.env.NEXT_PUBLIC_SUPPORT_EMAIL),
+    supportPhone: env(process.env.NEXT_PUBLIC_SUPPORT_PHONE) ?? "+91 7378010000",
     supportHours: env(process.env.NEXT_PUBLIC_SUPPORT_HOURS),
     businessName: env(process.env.NEXT_PUBLIC_BUSINESS_NAME),
     businessAddress: env(process.env.NEXT_PUBLIC_BUSINESS_ADDRESS),
@@ -51,7 +59,7 @@ export const site = {
     returnWindowDays: null as number | null,
     exchangePolicy: null as string | null,
     taxNote: null as string | null,
-    paymentProviders: null as string | null,
+    paymentProviders: "Cash on Delivery only" as string | null,
     lastReviewed: null as string | null,
   },
 };

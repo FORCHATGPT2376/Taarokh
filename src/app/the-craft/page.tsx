@@ -34,7 +34,7 @@ const modules = [
     img: "/images/editorial/swatch-board.jpg",
     alt: "Concept render: seven print swatches — florals, lattices and arcades — side by side.",
     body: [
-      "Every TAAROKH print is an original drawing, made at the scale of a 20 mm strap: the Sanganer buti, the Bagru jaal, the Jharokha arcade.",
+      "Every TAAROKH print is an original drawing, made at the scale of a watch strap: the Sanganer buti, the Bagru jaal, the Jharokha arcade.",
       "We use the vocabulary of these traditions — scale, repetition, palette — without copying any existing block, protected artwork or building.",
     ],
   },
@@ -73,7 +73,7 @@ const tests = [
   ["Wear trial", "At least seven days of ordinary wear across several testers and wrist sizes, recording comfort, slipping and rough edges."],
   ["Colourfastness screen", "Damp-cloth rub and sweat-exposure checks; formal textile testing where a claim requires it."],
   ["Mechanical inspection", "Repeated attachment cycles, buckle operation, stitch integrity and careful pull testing."],
-  ["Fit verification", "Fitted to several watches with standard 20 mm lugs, recording any clearance problems. No universal-fit claims."],
+  ["Fit verification", "Fitted to several watches with standard 18, 20 and 22 mm lugs, recording any clearance problems. No universal-fit claims."],
 ];
 
 export default function CraftPage() {

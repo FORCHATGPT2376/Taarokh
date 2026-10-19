@@ -31,17 +31,17 @@ function variants(code: string, widths: { w: number; status: VariantStatus }[]):
 }
 
 const launchWidths = [
-  { w: 18, status: "planned" as const },
+  { w: 18, status: "preview" as const },
   { w: 20, status: "preview" as const },
-  { w: 22, status: "planned" as const },
+  { w: 22, status: "preview" as const },
 ];
-const launchOnly = [{ w: 20, status: "preview" as const }];
+const launchOnly = launchWidths;
 
 function specs(outer: string, extra: Spec[] = []): Spec[] {
   return [
     { label: "Strap form", value: "Two-piece strap for standard spring-bar lugs", verified: false },
-    { label: "Lug width", value: "20 mm (18 mm and 22 mm under consideration)", verified: false },
-    { label: "Taper", value: "20 mm at the lugs to 18 mm at the buckle (target)", verified: false },
+    { label: "Lug width", value: "18 mm, 20 mm or 22 mm", verified: false },
+    { label: "Taper", value: "Tapers 2 mm towards the buckle, e.g. 20 mm to 18 mm (target)", verified: false },
     { label: "Length", value: `Approx. ${LONG} mm long piece + ${SHORT} mm buckle piece (target)`, verified: false },
     { label: "Outer", value: outer, verified: false },
     { label: "Lining", value: "Comfort lining — material to be confirmed after wear testing", verified: false },
@@ -104,8 +104,8 @@ export const products: Product[] = [
     variants: variants("TAR-SAN-IND", launchWidths),
     related: ["sanganer-ivory", "bagru-midnight", "jaipur-rose"],
     seo: {
-      title: "Sanganer Indigo — 20 mm Watch Strap",
-      description: "An indigo watch strap with a small ivory floral buti, inspired by Sanganeri printing. Designed for analog watches with 20 mm standard lugs.",
+      title: "Sanganer Indigo — Watch Strap, 18/20/22 mm",
+      description: "An indigo watch strap with a small ivory floral buti, inspired by Sanganeri printing. Available in 18, 20 and 22 mm for analog watches with standard lugs.",
     },
     createdAt: "2026-10-19",
   },
@@ -145,8 +145,8 @@ export const products: Product[] = [
     variants: variants("TAR-SAN-IVR", launchOnly),
     related: ["sanganer-indigo", "jharokha-ivory", "bagru-earth"],
     seo: {
-      title: "Sanganer Ivory — 20 mm Watch Strap",
-      description: "An ivory fabric watch strap with small outlined indigo florals, inspired by Sanganeri printing. For analog watches with 20 mm standard lugs.",
+      title: "Sanganer Ivory — Watch Strap, 18/20/22 mm",
+      description: "An ivory fabric watch strap with small outlined indigo florals, inspired by Sanganeri printing. Available in 18, 20 and 22 mm.",
     },
     createdAt: "2026-10-19",
   },
@@ -186,8 +186,8 @@ export const products: Product[] = [
     variants: variants("TAR-SAN-ROS", launchOnly),
     related: ["sanganer-indigo", "sanganer-ivory", "jharokha-ivory"],
     seo: {
-      title: "Jaipur Rose — 20 mm Watch Strap",
-      description: "A muted rose watch strap with small ivory florals, inspired by Jaipur's colour and Sanganeri printing. For 20 mm standard lugs.",
+      title: "Jaipur Rose — Watch Strap, 18/20/22 mm",
+      description: "A muted rose watch strap with small ivory florals, inspired by Jaipur's colour and Sanganeri printing. Available in 18, 20 and 22 mm.",
     },
     createdAt: "2026-10-19",
   },
@@ -229,8 +229,8 @@ export const products: Product[] = [
     variants: variants("TAR-BAG-EAR", launchWidths),
     related: ["bagru-midnight", "sanganer-indigo", "jharokha-noir"],
     seo: {
-      title: "Bagru Earth — 20 mm Watch Strap",
-      description: "An ochre fabric watch strap with a black lattice and red flowers, inspired by Bagru printing. For analog watches with 20 mm standard lugs.",
+      title: "Bagru Earth — Watch Strap, 18/20/22 mm",
+      description: "An ochre fabric watch strap with a black lattice and red flowers, inspired by Bagru printing. Available in 18, 20 and 22 mm.",
     },
     createdAt: "2026-10-19",
   },
@@ -269,8 +269,8 @@ export const products: Product[] = [
     variants: variants("TAR-BAG-MID", launchOnly),
     related: ["bagru-earth", "sanganer-indigo", "jharokha-noir"],
     seo: {
-      title: "Bagru Midnight — 20 mm Watch Strap",
-      description: "A midnight-blue fabric watch strap with a sand-coloured lattice, inspired by Bagru printing. For 20 mm standard lugs.",
+      title: "Bagru Midnight — Watch Strap, 18/20/22 mm",
+      description: "A midnight-blue fabric watch strap with a sand-coloured lattice, inspired by Bagru printing. Available in 18, 20 and 22 mm.",
     },
     createdAt: "2026-10-19",
   },
@@ -314,8 +314,8 @@ export const products: Product[] = [
     variants: variants("TAR-JHA-NOR", launchWidths),
     related: ["jharokha-ivory", "bagru-midnight", "sanganer-indigo"],
     seo: {
-      title: "Jharokha Noir — 20 mm Watch Strap",
-      description: "A near-black watch strap with a fine antique-gold arcade inspired by Jaipur's jharokha architecture. For 20 mm standard lugs.",
+      title: "Jharokha Noir — Watch Strap, 18/20/22 mm",
+      description: "A near-black watch strap with a fine antique-gold arcade inspired by Jaipur's jharokha architecture. Available in 18, 20 and 22 mm.",
     },
     createdAt: "2026-10-19",
   },
@@ -359,8 +359,8 @@ export const products: Product[] = [
     variants: variants("TAR-JAI-IVR", launchOnly),
     related: ["jharokha-noir", "sanganer-ivory", "jaipur-rose"],
     seo: {
-      title: "Courtyard Ivory — 20 mm Watch Strap",
-      description: "A neutral ivory watch strap with restrained indigo arch geometry inspired by Jaipur architecture. For 20 mm standard lugs.",
+      title: "Courtyard Ivory — Watch Strap, 18/20/22 mm",
+      description: "A neutral ivory watch strap with restrained indigo arch geometry inspired by Jaipur architecture. Available in 18, 20 and 22 mm.",
     },
     createdAt: "2026-10-19",
   },

@@ -25,6 +25,11 @@ export function Footer() {
             <p className="text-sm leading-relaxed text-ivory/70">
               Contemporary straps for traditional analog watches, inspired by the textile traditions and architecture of Jaipur.
             </p>
+            {site.contact.supportPhone && (
+              <p className="mt-6">
+                <a href={`tel:${site.contact.supportPhone.replace(/\s/g, "")}`} className="serif text-2xl text-ivory link-underline">{site.contact.supportPhone}</a>
+              </p>
+            )}
             <p className="mt-6 text-xs leading-relaxed text-ivory/50">
               Independent aftermarket straps. Not affiliated with or endorsed by any watch brand.
             </p>

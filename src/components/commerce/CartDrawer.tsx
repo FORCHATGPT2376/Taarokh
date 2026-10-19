@@ -6,7 +6,6 @@ import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import { useCart } from "./CartProvider";
 import { BagContents } from "./BagContents";
-import { site } from "@/data/site";
 import { useFocusTrap } from "@/components/ui/useFocusTrap";
 
 const ease = [0.22, 1, 0.36, 1] as const;
@@ -49,7 +48,7 @@ export function CartDrawer() {
             <div className="flex items-center justify-between border-b border-line px-6 py-5 sm:px-8">
               <div className="flex items-baseline gap-3">
                 <h2 id="bag-title" className="serif text-2xl">
-                  {site.storeMode === "preview" ? "Preview bag" : "Your bag"}
+                  Your bag
                 </h2>
                 <span className="text-xs tabular-nums text-stone">
                   {count} {count === 1 ? "item" : "items"}

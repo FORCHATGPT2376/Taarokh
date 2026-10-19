@@ -23,8 +23,8 @@ export default function Page() {
       <p>Once your order is handed to the courier, you will receive a tracking reference by email. Order status updates will reflect real courier events only.</p>
       <h2>Delays and exceptions</h2>
       <p>If a delivery is delayed, lost or arrives damaged, please <Link href="/contact">contact us</Link> with your order ID and photographs where relevant. We will explain the next steps under our <Link href="/returns">returns and defect policy</Link>.</p>
-      <h2>Orders during the preview</h2>
-      <p>The site is currently a catalogue preview. No orders can be placed, and nothing is shipped.</p>
+      <h2>Cash on Delivery</h2>
+      <p>All orders are Cash on Delivery: you pay the courier when your strap arrives. We call the number you give at checkout to confirm the order before it is dispatched.</p>
     </PolicyPage>
   );
 }

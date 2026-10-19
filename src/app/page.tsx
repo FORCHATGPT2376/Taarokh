@@ -115,7 +115,7 @@ export default function Home() {
           </div>
           <Reveal delay={0.2} className="self-end lg:col-span-5 lg:col-start-8">
             <p className="leading-relaxed text-stone">
-              A preview of the first collection: two-piece straps for traditional watches with standard 20&nbsp;mm lugs. Prices are indicative until samples are approved.
+              The first collection: two-piece straps for traditional watches with standard 18, 20 or 22&nbsp;mm lugs. Pre-order now and pay cash on delivery.
             </p>
             <ButtonLink href="/shop" variant="text" arrow className="mt-6">
               View all straps

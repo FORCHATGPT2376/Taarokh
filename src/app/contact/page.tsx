@@ -22,6 +22,11 @@ export default function ContactPage() {
         </div>
         <aside className="space-y-10 lg:col-span-4 lg:col-start-9">
           <div className="border-t border-line pt-6">
+            <p className="eyebrow text-[0.6rem] text-stone">Phone &amp; WhatsApp</p>
+            <p className="mt-2 serif text-3xl">{c.supportPhone ? <a href={`tel:${c.supportPhone.replace(/\s/g, "")}`} className="link-underline">{c.supportPhone}</a> : <TBC value={null} />}</p>
+            <p className="mt-1 text-xs text-stone">Call to order, or for help with sizing.</p>
+          </div>
+          <div className="border-t border-line pt-6">
             <p className="eyebrow text-[0.6rem] text-stone">Email</p>
             <p className="mt-2 serif text-2xl">{c.supportEmail ? <a href={`mailto:${c.supportEmail}`} className="link-underline">{c.supportEmail}</a> : <TBC value={null} />}</p>
           </div>

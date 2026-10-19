@@ -172,7 +172,7 @@ async function ProductContent({ params }: { params: PageProps<"/products/[handle
           <h2 id="reviews-title" className="serif text-4xl">Reviews</h2>
           {reviews.length === 0 ? (
             <p className="max-w-xl text-sm leading-relaxed text-stone">
-              No reviews yet. This strap is in preview — reviews will appear here only from customers who have bought and received it, and only with their permission.
+              No reviews yet. Reviews will appear here only from customers who have bought and received it, and only with their permission.
             </p>
           ) : (
             <ul className="space-y-8">

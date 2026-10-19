@@ -21,14 +21,14 @@ export function variantAvailability(product: Product, v: Variant, mode: StoreMod
   }
 
   // preview / sample pending
-  if (mode === "preview") return { kind: "preview", max: site.maxPerOrder, label: "Concept preview" };
+  if (mode === "preview") return { kind: "preview", max: site.maxPerOrder, label: "Pre-order" };
   return { kind: "unavailable", max: 0, label: "Coming soon" };
 }
 
 export function productAvailabilityLabel(product: Product): string {
   const states = product.variants.map((v) => variantAvailability(product, v));
   if (states.some((s) => s.kind === "purchasable")) return "Available to order";
-  if (states.some((s) => s.kind === "preview")) return "Concept preview";
+  if (states.some((s) => s.kind === "preview")) return "Pre-order";
   return "Coming soon";
 }
 

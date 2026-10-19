@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { indianStates } from "@/data/india";
 
 export const contactTopics = ["size-help", "existing-order", "material-question", "collaboration", "other"] as const;
 export const topicLabels: Record<(typeof contactTopics)[number], string> = {
@@ -36,3 +37,32 @@ export const checkoutSchema = z.object({
 });
 
 export type ContactInput = z.infer<typeof contactSchema>;
+
+
+const phone = z
+  .string()
+  .transform((s) => s.replace(/[\s-]/g, "").replace(/^(\+91|0091|91(?=\d{10}$)|0(?=\d{10}$))/, ""))
+  .refine((s) => /^[6-9]\d{9}$/.test(s), "Enter a 10-digit Indian mobile number.");
+
+export const orderSchema = z.object({
+  lines: checkoutSchema.shape.lines,
+  customer: z.object({
+    name: z.string().trim().min(2, "Please enter your full name.").max(100),
+    phone,
+    email: z.string().trim().email("Please enter a valid email address.").max(200).optional().or(z.literal("")),
+  }),
+  address: z.object({
+    line1: z.string().trim().min(5, "Enter your house / flat number and street.").max(200),
+    line2: z.string().trim().max(200).optional().or(z.literal("")),
+    landmark: z.string().trim().max(120).optional().or(z.literal("")),
+    city: z.string().trim().min(2, "Enter your city or town.").max(80),
+    state: z.enum(indianStates, { message: "Choose your state." }),
+    pincode: z.string().trim().regex(/^[1-9]\d{5}$/, "Enter a valid 6-digit PIN code."),
+  }),
+  notes: z.string().trim().max(500).optional().or(z.literal("")),
+  payment: z.literal("cod"),
+  agree: z.literal(true, { message: "Please confirm the order details." }),
+  company: z.string().max(0).optional().or(z.literal("")),
+});
+
+export type OrderInput = z.infer<typeof orderSchema>;

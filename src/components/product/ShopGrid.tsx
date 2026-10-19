@@ -50,7 +50,7 @@ export function ShopGrid({ products }: { products: Product[] }) {
         label: "Availability",
         options: [
           { value: "available", label: "Available to order" },
-          { value: "preview", label: "Concept preview" },
+          { value: "preview", label: "Pre-order" },
         ],
       },
     ];
@@ -157,7 +157,7 @@ export function ShopGrid({ products }: { products: Product[] }) {
         <div className="mx-auto max-w-md py-32 text-center">
           <p className="serif text-4xl">No straps match these filters.</p>
           <p className="mt-4 text-sm leading-relaxed text-stone">
-            Try another width or colour — or <Link href="/contact" className="underline underline-offset-4">ask us about future sizes</Link>. No strap is open for order yet during the catalogue preview.
+            Try another width or colour — or <Link href="/contact" className="underline underline-offset-4">ask us about future sizes</Link>. 
           </p>
           <button type="button" onClick={clearAll} className="mt-8 inline-flex min-h-12 items-center border border-ink px-8 text-[0.7rem] font-semibold uppercase tracking-[0.24em] hover:bg-ink hover:text-ivory">
             Clear filters
