@@ -15,7 +15,7 @@ export const site = {
   name: "TAAROKH",
   fullName: "TAAROKH | JAIPUR",
   tagline: "Contemporary watch straps inspired by the artistry of Jaipur.",
-  url: env(process.env.NEXT_PUBLIC_SITE_URL) ?? "http://localhost:3000",
+  url: env(process.env.NEXT_PUBLIC_SITE_URL) ?? "https://www.taarokh.com",
   locale: "en_IN",
   copyrightYear: 2026,
   currency: "INR" as const,
