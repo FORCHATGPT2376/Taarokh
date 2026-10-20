@@ -135,7 +135,7 @@ await t("Shop: collection filter + empty state + clear", async () => {
   await dlg.getByRole("button", { name: /Show 2 straps/ }).click();
   await page.waitForTimeout(1200);
   expect((await page.locator("main article:visible").count()) === 2, `cards ${await page.locator("main article:visible").count()}`);
-  await page.goto(`${base}/shop?availability=available`, { waitUntil: "networkidle" });
+  await page.goto(`${base}/shop?collection=nope`, { waitUntil: "networkidle" });
   await page.getByText("No straps match these filters.").waitFor({ timeout: 3000 });
   await page.getByRole("button", { name: "Clear filters" }).click();
   await page.waitForTimeout(500);

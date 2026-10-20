@@ -22,10 +22,9 @@ const sorts = [
   { id: "newest", label: "Newest" },
 ];
 
-function availabilityOf(p: Product): "available" | "preview" | "soon" {
+function availabilityOf(p: Product): "available" | "soon" {
   const k = p.variants.map((v) => variantAvailability(p, v).kind);
-  if (k.includes("purchasable")) return "available";
-  if (k.includes("preview")) return "preview";
+  if (k.includes("purchasable") || k.includes("preview")) return "available";
   return "soon";
 }
 
@@ -50,7 +49,6 @@ export function ShopGrid({ products }: { products: Product[] }) {
         label: "Availability",
         options: [
           { value: "available", label: "Available to order" },
-          { value: "preview", label: "Pre-order" },
         ],
       },
     ];

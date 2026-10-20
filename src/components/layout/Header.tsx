@@ -47,7 +47,7 @@ export function Header() {
         {preview && (
           <div className={cx("flex h-8 items-center justify-center px-4 text-center transition-colors duration-700", transparent ? "bg-ink/30 text-ivory/85" : "bg-indigo text-ivory/90")}>
             <p className="truncate text-[0.6rem] font-semibold uppercase tracking-[0.24em]">
-              Pre-orders open<span className="hidden sm:inline"> · Cash on Delivery across India</span> ·{" "}
+              Now taking orders<span className="hidden sm:inline"> · Cash on Delivery across India</span> ·{" "}
               <a href={`tel:${site.contact.supportPhone?.replace(/\s/g, "")}`} className="link-underline-static">
                 {site.contact.supportPhone}
               </a>

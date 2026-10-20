@@ -104,7 +104,7 @@ export function ProductPurchase({ product, siblings }: { product: Product; sibli
 
       <div className="mt-4 space-y-2 border-t border-line pt-5 text-xs leading-relaxed text-stone">
         <p>
-          <span className="font-semibold text-ink">{avail?.label ?? (anyAvailable ? (site.storeMode === "preview" ? "Pre-order" : "Available to order") : "Coming soon")}.</span>{" "}
+          <span className="font-semibold text-ink">{avail?.label ?? (anyAvailable ? "Available to order" : "Coming soon")}.</span>{" "}
           {site.storeMode === "preview" ? "Pay in cash when your strap is delivered. We call to confirm every order before dispatch; delivery time is confirmed on that call." : null}
         </p>
         <p>Measure your watch&rsquo;s lug width before ordering. Compatibility depends on the case and attachment system; <Link href="/contact" className="underline underline-offset-2">contact us</Link> if unsure.</p>

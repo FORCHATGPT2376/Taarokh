@@ -11,8 +11,8 @@ export default function Page() {
     <PolicyPage slug="terms" title="Terms & Conditions" intro="The terms that apply when you use this website and, once orders open, when you buy from us.">
       <h2>About us</h2>
       <p>This website is operated by <TBC value={site.contact.businessName} />, <TBC value={site.contact.businessAddress} />.</p>
-      <h2>Pre-orders and images</h2>
-      <p>Straps are currently offered as pre-orders. Images marked &ldquo;concept render&rdquo; or &ldquo;illustration&rdquo; are not photographs of finished products. An order is confirmed only after we call you to verify it.</p>
+      <h2>Orders and images</h2>
+      <p>Images marked &ldquo;concept render&rdquo; or &ldquo;illustration&rdquo; are not photographs of finished products. An order is confirmed only after we call you to verify it.</p>
       <h2>Product information and compatibility</h2>
       <p>We aim to describe products accurately. Straps are designed for watches with standard spring-bar lugs of the stated width; compatibility depends on your watch&rsquo;s case and attachment system. Please read the <Link href="/size-guide">size guide</Link> before ordering.</p>
       <h2>Independence</h2>

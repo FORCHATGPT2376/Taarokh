@@ -16,7 +16,7 @@ export default function ShopPage() {
     <>
       <PageHeader
         crumbs={[{ href: "/shop", label: "Shop" }]}
-        eyebrow={`${products.length} straps · pre-order · cash on delivery`}
+        eyebrow={`${products.length} straps · cash on delivery across India`}
         title={["The Strap Collection"]}
         intro="A compact range of heritage-inspired straps for watches with compatible standard lugs. Measure your lug width before you choose."
       />
